@@ -1,0 +1,21 @@
+.card-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 282px);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-content: center;
+}
+
+.card-list_no-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-list__title {
+    margin: 0 0 15px;
+    color: #fff;
+}
+
+

@@ -1,0 +1,50 @@
+.card {
+    width: 282px;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card__img {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 5px;
+}
+
+.card__btn_delete {
+    padding: 5px 10px;
+    background-color: #fff;
+    border: 1px solid #600eb3;
+    border-radius: 5px;
+    color: #000;
+    cursor: pointer;
+}
+
+.card__btn_like {
+    padding: 0;
+    border: none;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url("../../media/like_no-active.svg");
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.card__btn_like-active {
+    background-image: url("../../media/like_active.svg");
+
+}
