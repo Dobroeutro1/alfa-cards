@@ -1,10 +1,12 @@
 import React from 'react'
 import { SidebarProps } from './interfaces'
 import { actions } from './index'
+import { getRandomId } from '../../../utils'
 
 export class Sidebar extends React.PureComponent<SidebarProps, never> {
   addDog(): void {
-    this.props.dispatch(actions.getDogs())
+    const id = getRandomId(1, 671)
+    this.props.dispatch(actions.getCard(id))
   }
 
   changeFilter(): void {
@@ -21,7 +23,7 @@ export class Sidebar extends React.PureComponent<SidebarProps, never> {
         </div>
 
         <button className="sidebar__btn" onClick={() => this.addDog()}>
-          Добавить рандомную карточку
+          {this.props.loading ? "Загружаю..." :'Добавить карточку'}
         </button>
       </div>
     )

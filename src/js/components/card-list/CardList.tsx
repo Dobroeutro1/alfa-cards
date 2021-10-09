@@ -52,8 +52,6 @@ export class CardList extends React.PureComponent<CardListProps, CardListState> 
   }
 
   render(): React.ReactNode {
-    console.log('cardList props', this.props)
-    console.log('cardList state', this.state.cardList)
     if (this.props.cardList.length < 1) {
       return (
         <div className="card-list_no-content">
@@ -75,7 +73,7 @@ export class CardList extends React.PureComponent<CardListProps, CardListState> 
         {this.state.cardList.map((card) => (
           <Card
             key={card.id}
-            url={card.url}
+            image={card.image}
             liked={card.liked}
             id={card.id}
             onChangeLikeCard={this.onChangeLikeCard}

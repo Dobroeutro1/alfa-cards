@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import './css/index.css'
+import './index.css'
 import { applyMiddleware, createStore } from 'redux'
 import reducer from './reducers'
 import { actionFn } from './utils'

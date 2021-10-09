@@ -11,10 +11,10 @@ export function reducer(state = initialState, action: IAction): SidebarStorage {
   switch (action.type) {
     case actions.CHANGE_FILTER_STATE:
       return { ...state, filter: action.payload as boolean }
-    case actions.GET_DOGS:
+    case actions.GET_CARD:
       return { ...state, loading: true }
-    case actions.GET_DOGS_OK:
-    case actions.GET_DOGS_ERROR:
+    case actions.GET_CARD_OK:
+    case actions.GET_CARD_ERROR:
       return { ...state, loading: false }
 
     default:

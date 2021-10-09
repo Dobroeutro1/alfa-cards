@@ -1,6 +1,6 @@
-@import url("components/CardList.css");
-@import url("./components/Sidebar.css");
-@import url("./components/Card.css");
+@import url("../src/css/components/CardList.css");
+@import url("../src/css/components/Sidebar.css");
+@import url("../src/css/components/Card.css");
 
 body {
   margin: 0;

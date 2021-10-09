@@ -14,3 +14,7 @@ export const actionFn: Middleware =
 export function getId(message: string): number {
   return parseInt(message.split('.jpg')[0].split('_')[1], 10)
 }
+
+export function getRandomId(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}

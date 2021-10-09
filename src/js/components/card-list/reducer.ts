@@ -1,46 +1,9 @@
 import { Card, CardListStorage } from './interfaces'
 import { IAction } from '../../../interfaces'
 import { actions } from './index'
-import { getId } from '../../../utils'
 
 const initialState: CardListStorage = {
-  cardList: [
-    {
-      liked: false,
-      url: 'https://images.dog.ceo/breeds/affenpinscher/n02110627_11819.jpg',
-      id: getId('https://images.dog.ceo/breeds/affenpinscher/n02110627_11819.jpg')
-    },
-    {
-      liked: false,
-      url: 'https://images.dog.ceo/breeds/affenpinscher/n02110627_1446.jpg',
-      id: getId('https://images.dog.ceo/breeds/affenpinscher/n02110627_1446.jpg')
-    },
-    {
-      liked: false,
-      url: 'https://images.dog.ceo/breeds/affenpinscher/n02110627_11584.jpg',
-      id: getId('https://images.dog.ceo/breeds/affenpinscher/n02110627_11584.jpg')
-    },
-    {
-      liked: false,
-      url: 'https://images.dog.ceo/breeds/affenpinscher/n02110627_8621.jpg',
-      id: getId('https://images.dog.ceo/breeds/affenpinscher/n02110627_8621.jpg')
-    },
-    {
-      liked: false,
-      url: 'https://images.dog.ceo/breeds/affenpinscher/n02110627_13211.jpg',
-      id: getId('https://images.dog.ceo/breeds/affenpinscher/n02110627_13211.jpg')
-    },
-    {
-      liked: false,
-      url: 'https://images.dog.ceo/breeds/affenpinscher/n02110627_12819.jpg',
-      id: getId('https://images.dog.ceo/breeds/affenpinscher/n02110627_12819.jpg')
-    },
-    {
-      liked: false,
-      url: 'https://images.dog.ceo/breeds/affenpinscher/n02110627_9634.jpg',
-      id: getId('https://images.dog.ceo/breeds/affenpinscher/n02110627_9634.jpg')
-    }
-  ],
+  cardList: [],
   filter: false
 }
 

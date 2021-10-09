@@ -1,15 +1,17 @@
 import { fetchApi } from './utils'
 import { HEADERS } from './constants'
-import { getDogResponse } from './interfaces'
+import { RickAndMortyResponse } from './interfaces'
 
 export default class Api {
-  readonly url = 'https://dog.ceo/api/breed/doberman/images/random'
+  generateUrl(id: number): string {
+    return `https://rickandmortyapi.com/api/character/${id}`
+  }
 
-  async getDog(): Promise<getDogResponse> {
-    const result = await fetchApi<getDogResponse>({
-      url: this.url,
-      method: 'get',
-      headers: HEADERS
+  async getRickAndMorty(id: number): Promise<RickAndMortyResponse> {
+    const result = await fetchApi<RickAndMortyResponse>({
+      url: this.generateUrl(id),
+      method: 'GET',
+      headers:HEADERS
     })
 
     return result

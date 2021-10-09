@@ -20,7 +20,6 @@ export async function fetchApi<T>(rqst: APIRequest): Promise<T> {
     throw new Error('Ошибка при выполнении запроса')
   }
 
-  // eslint-disable-next-line no-console
   console.log('API:', result)
 
   return result as T

@@ -15,15 +15,15 @@ export interface CardListState extends IProps {
 }
 
 export interface CardProps {
-  url: string
   id: number
+  image: string
   liked: boolean
   onChangeLikeCard: (card: Card) => void
   onDeleteCard: (card: Card) => void
 }
 
 export interface Card {
-  url: string
   id: number
+  image: string
   liked: boolean
 }
