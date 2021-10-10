@@ -15,3 +15,7 @@
 ### Вспомогательные инструменты
 * CRA
 * Git
+
+
+### Github pages
+https://dobroeutro1.github.io/alfa-cards/
